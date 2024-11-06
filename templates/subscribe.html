@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="form-container">
+
+
+  <form method="post" action="" class="">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="Email1" class="form-label">Enter Your Email address to subscribe to our news letter</label>
+
+      <div class="mb-4">
+        <input class="form-control" type="email" name="email"  placeholder="Enter a valid email address" required>
+      
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      
+      </div>
+    
+    </div>
+    <div class="form-text"><h3>We'll never share your email with anyone else.</h3></div>
+    
+  </form>
+
+  <!-- {% if messages %}
+    <p>{{ messages }}</p>
+  {% endif %} -->
+    
+</div>
+{% endblock %}

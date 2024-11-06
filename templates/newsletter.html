@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="form-container">
+<form method="post" action="">
+    {% csrf_token %}
+    <div class="mb-3">
+        <textarea placeholder="enter your text here"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock %}

@@ -64,7 +64,7 @@ class CreateNewsletter(View):
                     for email in recipients
                 ]
                 send_mass_mail(email_message)
-                messages.success(request, "Newsletter SENt to all Subscribers.")
+                messages.success(request, "Newsletter Sentt to all Subscribers.")
 
             else:
                 messages.info(request, 'No subscribers to send to')

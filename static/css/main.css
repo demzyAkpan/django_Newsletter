@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-image: url(./alto-hsu-rV5Hap-kw7Y-unsplash.jpg);
+    background-image: url(/static/images/alto-hsu-rV5Hap-kw7Y-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

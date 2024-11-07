@@ -34,10 +34,10 @@ class CreateNewsletter(View):
     template_name = 'newsletter.html'
     model = Newletter
 
-    def get(self, request):
+    def get(self, request,*args, **kwargs):
         return render(request, self.template_name)
     
-    def post(self, request):
+    def post(self, request, *args, **kwargs):
         title = request.POST.get('title')
         body = request.POST.get('body')
 

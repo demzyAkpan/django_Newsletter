@@ -10,3 +10,6 @@ class Subscriber(models.Model):
 class Newletter(models.Model):
     title = models.CharField(max_length=50, blank=False)
     body = models.CharField(max_length=200, blank=False)
+
+    def __str__(self):
+        return self.title
